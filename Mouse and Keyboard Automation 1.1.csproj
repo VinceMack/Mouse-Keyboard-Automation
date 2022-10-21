@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	<TargetFramework>net6.0-windows</TargetFramework>
+	<NoWarn>NU1701</NoWarn>
+	<RootNamespace>Mouse_and_Keyboard_Automation_1._1</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GregsStack.InputSimulatorStandard" Version="1.3.4" />
+    <PackageReference Include="MouseKeyHook" Version="5.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Gma.System.MouseKeyHook">
+      <HintPath>bin\Debug\net6.0-windows\Gma.System.MouseKeyHook.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsInput">
+      <HintPath>bin\Debug\net6.0-windows\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
